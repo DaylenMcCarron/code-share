@@ -1,3 +1,5 @@
+
+
 // src/components/Editor.js
 import React, { useState, useEffect } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
@@ -53,7 +55,7 @@ const Editor = ({ roomId }) => {
       onChange={handleChange}
       onKeyDown={handleKeyDown}
       placeholder="Start typing..."
-      className="w-full h-full p-4 border rounded-md font-mono text-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+      className="w-full h-full p-4 border rounded-md font-mono text-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none dark:bg-gray-800 dark:text-white"
       style={{ fontFamily: 'monospace', lineHeight: '1.5em' }}
     ></textarea>
   );
